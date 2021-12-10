@@ -1,4 +1,4 @@
-package com.example.calendarapp.api
+package com.example.calendarapp.model
 
 import com.google.gson.annotations.SerializedName
 import java.util.Date

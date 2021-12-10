@@ -3,11 +3,10 @@ package com.example.calendarapp.activities.calendarActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.calendarapp.R
-import com.example.calendarapp.api.Date
+import com.example.calendarapp.model.Date
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
