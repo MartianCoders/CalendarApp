@@ -1,9 +1,10 @@
-package com.example.calendarapp
+package com.example.calendarapp.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.calendarapp.activities.calendarActivity.CalendarActivity
+import com.example.calendarapp.R
+import com.example.calendarapp.ui.calendar.CalendarActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,8 +13,5 @@ class MainActivity : AppCompatActivity() {
 
         val intent: Intent = Intent(this, CalendarActivity::class.java)
         startActivity(intent)
-
-
-
     }
 }

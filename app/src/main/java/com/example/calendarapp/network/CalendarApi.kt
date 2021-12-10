@@ -1,6 +1,5 @@
-package com.example.calendarapp.api
+package com.example.calendarapp.network
 
-import com.example.calendarapp.model.Date
 import retrofit2.http.GET
 import retrofit2.http.Path
 
@@ -10,5 +9,5 @@ interface CalendarApi {
     suspend fun calendarList(
         @Path("Year") year: Int,
         @Path("CountryCode") country: String
-    ): List<Date>
+    ): List<DateNetworkEntity>
 }

@@ -53,11 +53,17 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-common:2.4.0'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.0'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
+    implementation 'androidx.fragment:fragment-ktx:1.4.0'
 
     //Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0'
 
     //Hilt
-    implementation 'com.google.dagger:hilt-android:{latest-version}'
-    kapt 'com.google.dagger:hilt-android-compiler:{latest-version}'
+    implementation 'com.google.dagger:hilt-android:2.40.5'
+    kapt 'com.google.dagger:hilt-compiler:2.40.5'
+    kapt 'com.google.dagger:hilt-android-compiler:2.40.5'
+}
+
+kapt {
+    correctErrorTypes = true
 }

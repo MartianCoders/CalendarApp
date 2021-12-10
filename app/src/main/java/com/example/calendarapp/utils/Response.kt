@@ -1,15 +1,11 @@
 package com.example.calendarapp.utils
 
-data class Response<out T>(val status: Status, val data: T?, val message: String?) {
-    companion object {
-        fun <T> succes(data: T):
-                Response<T> = Response(Status.SUCCES, data, null)
+import java.lang.Exception
 
-        fun <T> error(data: T?, message: String):
-                Response<T> = Response(Status.ERROR, data, message)
+sealed class Response<out R> {
 
-        fun <T> loading(data: T?):
-                Response<T> = Response(Status.LOADING, data, null)
+    data class Success<out T>(val data: T): Response<T>()
+    data class Error(val exception: Exception): Response<Nothing>()
+    object Loading: Response<Nothing>()
 
-    }
 }
